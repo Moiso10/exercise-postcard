@@ -1,45 +1,78 @@
-body {
-	background: black;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
 }
 
-.postcard {
-	background: white;
-	width: 400px;
-	height: 300px;
-	margin: auto;
-}
-.postcard-header {
-	display: flex;
-}
-.postcard-header img {
-	width: 50px;
-	height: 50px;
-}
-.postcard-header h1 {
-	margin: 0px;
-	width: 400px;
-}
-.postcard-body {
-	display: flex;
+#initial{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
 }
 
-body-left p:first-child {
-	margin-top: none;
-	font-family: "Cambria";
+#initial .container {
+    width: 100%;
+    height: auto;
 }
-.body-left,
-.body.right {
-	padding: 2px;
+#initial .container header{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+
+}
+#initial .container header .title{
+    width: 500px;
+    margin: 0 auto;
+    
 }
 
-input {
-	border: none;
-	border-bottom: 2px solid grey;
+#initial .container .content{
+    width: 100%;
+    height: 80vh;
+    overflow-y: scroll;
+
 }
-.postcard-footer {
-	text-align: center;
+
+.post{
+    width: 500px;
+    margin: 20px auto;
 }
-button {
-	background: darkgrey;
-	padding: 5px;
+
+.post header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px auto;
+    box-sizing: border-box;
+    
 }
+
+.post .post-body{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.post .post-body img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.post .post-footer{
+    width: 100%;
+    height: auto;
+    margin-bottom: -5px;
+    box-sizing: border-box;
+    
+    
+}
+
+.post-footer p{
+    text-transform: capitalize;
+    text-align: justify;
+    background-color: white;
